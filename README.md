@@ -59,3 +59,33 @@ Access via the popup → ⚙️ Settings:
 - **Notifications**: Enable/disable download notifications
 - **Content Caching**: Cache downloaded content to reduce API calls
 - **Cache Expiry**: Set cache expiration time (1-168 hours)
+
+## Permissions
+
+The extension requires these permissions:
+
+- `activeTab` - Access to current tab content
+- `storage` - Save settings and download history  
+- `downloads` - Create file downloads
+- `scripting` - Inject content scripts
+- `notifications` - Show download notifications
+- `host_permissions` - Access to `https://deepwiki.com/*`
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Extension not detecting DeepWiki pages**
+   - Ensure you're on a URL matching `https://deepwiki.com/*/*`
+   - Try refreshing the page
+   - Check if the extension is enabled
+
+2. **Download fails**
+   - Check your internet connection
+   - Verify the page has loaded completely
+   - Try disabling other extensions temporarily
+
+3. **Empty or malformed downloads**
+   - The page content might be dynamically loaded
+   - Try waiting a few seconds after page load
+   - Check if the page returns valid content
